@@ -1,0 +1,406 @@
+/* *********** Custom Button Styles *********** */
+.custom-btn {
+  .myBtn {
+    min-width: 162px;
+    display: block;
+    border: 2px solid;
+    border-color: #fd6602;
+    border-radius: 2.286em;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 0.786em;
+    margin-bottom: 0.8em;
+    padding: 0.74em 1.41575em;
+    text-align: center;
+    color: #fd6602;
+    background-color: transparent;
+    transition: all 0.25s ease 0s;
+  }
+
+  .myBtn:hover {
+    color: #ffffff;
+    background-color: #fd6602;
+    cursor: pointer;
+  }
+
+  a:not([href]):not([tabindex]) {
+    color: #fd6602;
+    ;
+  }
+
+  a:not([href]):not([tabindex]):hover {
+    color: #ffffff;
+    ;
+  }
+}
+
+/* *********** Modal +/- Button Styles *********** */
+.plus_minus_btn {
+  width: 100%;
+  font-size: 1.429em;
+  font-weight: 200;
+  border-radius: 100px;
+  padding: 0.15em 0.45em;
+  margin-bottom: 0.4em;
+  cursor: pointer;
+  background-color: rgb(211, 211, 211);
+  transition: all 0.25s ease 0s;
+}
+
+.plus_minus_btn:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+/* *********** Featured Category Arrow *********** */
+.nav_arrow {
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.nav_arrow:hover {
+  color: #fd6602;
+}
+
+
+/* **** Slick Header and Tab || Mobile || ONE *** */
+.header_and_tablists_mobile_view_one {
+  @include media-breakpoint-down(sm) {
+    .section-title {
+      font-weight: 500;
+      line-height: 1.235em;
+      margin: 0 0 0.8em;
+      padding-top: 0.8em;
+    }
+
+    ul:not(.slick-dots)[role="tablist"] {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      justify-content: unset !important;
+      width: 100%;
+      padding-bottom: 0;
+
+      li {
+        // width: 50%;
+        // min-width: 123px;
+        flex-shrink: 0;
+        text-align: center;
+        margin: auto;
+      }
+
+      .nav-link {
+        padding: 0 !important;
+        font-size: 1em;
+        line-height: 1.167em;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        color: #8a8a8a;
+        text-align: center;
+        margin: 0 8px;
+
+        &::after {
+          //display: none;
+          bottom: 0;
+          content: ' ';
+          border-bottom: 2px solid transparent;
+          display: block;
+          position: relative;
+          bottom: -1px;
+          margin-left: 20%;
+          padding-top: 9px;
+          margin-right: 20%;
+        }
+
+        &.active {
+          font-weight: 500;
+          color: #090909;
+          border-bottom: 1px solid #fd6602;
+          font-size: 1.15em;
+        }
+      }
+    }
+  }
+}
+
+
+/* **** Slick Header and Tab || Mobile || TWO *** */
+.header_and_tablists_mobile_view_two {
+  @include media-breakpoint-down(sm) {
+
+    .section-title {
+      font-weight: 500;
+      line-height: 1.235em;
+      margin: 0 0 0.8em;
+      padding-top: 0.8em;
+    }
+
+    ul:not(.slick-dots)[role="tablist"] {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      justify-content: unset !important;
+      width: 100%;
+      padding-bottom: 0;
+
+      li {
+        flex-shrink: 0;
+        // margin: 0 auto;
+
+        .nav-link {
+          color: #090909;
+          text-align: center;
+          display: inline-block;
+          border: 1px solid lightgray;
+          padding: 10px 8px;
+          font-size: 15px;
+          height: 40px;
+          min-width: 125px;
+          margin: 0px 5px 15px 5px;
+          border-radius: 11px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .active {
+          color: #fd6602;
+          border: 1px solid #fd6602;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+/* **** Custom Login Input Filed Styles *** */
+.custom-input {
+
+  .prepend-text {
+    padding-right: 0.3em;
+    border-bottom: 0.12em solid #fd6602;
+    line-height: 37px;
+  }
+
+  input[type=text] {
+    padding: 9px;
+    background-color: #f8f9fa;
+    color: #444;
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 1em;
+    border-bottom: 0.12em solid #fd6602;
+  }
+
+
+  // element.style {}
+
+  .custom-input input[type=text] {
+    padding: 9px;
+    background-color: #f8f9fa;
+    color: #444;
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 1em;
+    border-bottom: 0.12em solid #fd6602;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+}
+
+
+/* ************** PC BUILDRER LINK ************** */
+.pc-builder-link {
+  color: '#fd6602';
+  animation: blinkingText 1.2s infinite;
+  border: none;
+
+  @keyframes blinkingText {
+    0% {
+      color: #fd6602;
+    }
+
+    49% {
+      color: #fd6602;
+    }
+
+    60% {
+      color: #444444;
+    }
+
+    99% {
+      color: #444444;
+    }
+
+    100% {
+      color: #fd6602;
+      font-weight: 500;
+    }
+  }
+}
+
+
+/* ************** SIDEBAR PC BUILDER LINK ************** */
+// .nav {
+//   .special-day {
+//     a {
+//       color: #3ac000 !important;
+//     }
+//   }
+
+//   .limited-offer {
+//     a {
+//       color: #00ABC0 !important;
+//     }
+//   }
+
+//   .corporate-clients {
+//     a {
+//       color: #fd6602 !important;
+//     }
+//   }
+// }
+
+.nav {
+  &.menu-group {
+    .menu-item {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.nav_pc_builder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pcb_en {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  .pcb_bn {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .pcb_route {
+    display: block;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    -webkit-animation: gradient 5s infinite;
+    animation: gradient 5s infinite;
+    border: none;
+
+
+    @-webkit-keyframes gradient {
+      0% {
+        background: #00abc0;
+        background: -moz-linear-gradient(top, #00abc0 0%, #ec1c24 50%, #f9a51a 100%);
+        background: -webkit-linear-gradient(top, #00abc0 0%, #ec1c24 50%, #f9a51a 100%);
+        background: linear-gradient(to bottom, #00abc0 0%, #ec1c24 50%, #f9a51a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00abc0', endColorstr='#f9a51a', GradientType=0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      49% {
+        background: #ec1c24;
+        background: -moz-linear-gradient(top, #ec1c24 0%, #f9a51a 50%, #00abc0 100%);
+        background: -webkit-linear-gradient(top, #ec1c24 0%, #f9a51a 50%, #00abc0 100%);
+        background: linear-gradient(to bottom, #ec1c24 0%, #f9a51a 50%, #00abc0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec1c24', endColorstr='#00abc0', GradientType=0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      60% {
+        background: #00abc0;
+        background: -moz-linear-gradient(top, #00abc0 0%, #f9a51a 50%, #ec1c24 100%);
+        background: -webkit-linear-gradient(top, #00abc0 0%, #f9a51a 50%, #ec1c24 100%);
+        background: linear-gradient(to bottom, #00abc0 0%, #f9a51a 50%, #ec1c24 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00abc0', endColorstr='#ec1c24', GradientType=0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      99% {
+        background: #f9a51a;
+        background: -moz-linear-gradient(top, #f9a51a 0%, #ec1c24 50%, #00abc0 100%);
+        background: -webkit-linear-gradient(top, #f9a51a 0%, #ec1c24 50%, #00abc0 100%);
+        background: linear-gradient(to bottom, #f9a51a 0%, #ec1c24 50%, #00abc0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a51a', endColorstr='#00abc0', GradientType=0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      100% {
+        background: #ec1c24;
+        background: -moz-linear-gradient(top, #ec1c24 0%, #00abc0 50%, #f9a51a 100%);
+        background: -webkit-linear-gradient(top, #ec1c24 0%, #00abc0 50%, #f9a51a 100%);
+        background: linear-gradient(to bottom, #ec1c24 0%, #00abc0 50%, #f9a51a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec1c24', endColorstr='#f9a51a', GradientType=0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+/*  */
+
+.pcb_mobile_icon {
+
+  animation: pcb 5s infinite;
+  border: none;
+  font-weight: 500;
+
+  @keyframes pcb {
+    0% {
+      background: linear-gradient(to bottom right, #00ABC0, #ec1c24, #f9a51a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    49% {
+      background: linear-gradient(to bottom right, #ec1c24, #f9a51a, #00ABC0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+      background: linear-gradient(to bottom right, #00ABC0, #f9a51a, #ec1c24, );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    99% {
+      background: linear-gradient(to bottom right, #f9a51a, #ec1c24, #00ABC0, );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+      background: linear-gradient(to bottom right, #ec1c24, #00ABC0, #f9a51a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

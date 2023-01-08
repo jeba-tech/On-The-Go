@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'BalooTamma2Regular';
+    src: url('./fonts/baloo-tama-two/BalooTamma2Regular.eot');
+    src: url('./fonts/baloo-tama-two/BalooTamma2Regular.eot') format('embedded-opentype'),
+        url('./fonts/baloo-tama-two/BalooTamma2Regular.woff2') format('woff2'),
+        url('./fonts/baloo-tama-two/BalooTamma2Regular.woff') format('woff'),
+        url('./fonts/baloo-tama-two/BalooTamma2Regular.ttf') format('truetype'),
+        url('./fonts/baloo-tama-two/BalooTamma2Regular.svg#BalooTamma2Regular') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; // this is important
+
+}
+
+.font_baloo_tama_regular {
+    font-family: 'BalooTamma2Regular';
+}
+
+
+@font-face {
+    font-family: 'BalooTamma2Bold';
+    src: url('./fonts/baloo-tama-two/BalooTamma2Bold.eot');
+    src: url('./fonts/baloo-tama-two/BalooTamma2Bold.eot') format('embedded-opentype'),
+        url('./fonts/baloo-tama-two/BalooTamma2Bold.woff2') format('woff2'),
+        url('./fonts/baloo-tama-two/BalooTamma2Bold.woff') format('woff'),
+        url('./fonts/baloo-tama-two/BalooTamma2Bold.ttf') format('truetype'),
+        url('./fonts/baloo-tama-two/BalooTamma2Bold.svg#BalooTamma2Bold') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; // this is important
+}
+
+.font_baloo_tama_bold {
+    font-family: 'BalooTamma2Bold';
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}

@@ -1,0 +1,100 @@
+.numberCircle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+
+  background: #387cf6;
+  color: #fff;
+  text-align: center;
+
+  font-size: 18px;
+  display: block;
+  margin: 0;
+  border: 0;
+}
+
+.numberCircleGreen {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+
+  background: #4db193;
+  color: #fff;
+  text-align: center;
+
+  font-size: 18px;
+  display: block;
+  margin: 0;
+  border: 0;
+}
+
+.rootContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include media-breakpoint-down (md) {
+    flex-direction: row-reverse;
+    align-items: center;
+    // justify-content: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    p {
+      padding-left: 1.5rem;
+    }
+
+  }
+
+  .line {
+    position: absolute;
+    border-bottom: 2px solid #31725f;
+    width: 100%;
+    bottom: 17px;
+    z-index: -1;
+
+    &--done {
+      border-color: #1b4eab;
+    }
+
+    @include media-breakpoint-up (lg) {
+      &--start {
+        width: 50%;
+        right: 0;
+      }
+
+      &--end {
+        width: 50%;
+        left: 0;
+      }
+    }
+
+    @include media-breakpoint-down (md) {
+      // display: none;
+      border-bottom: 50px solid #31725f;
+      width: 2px;
+      left: 17px;
+
+      &--start {
+        display: none;
+      }
+    }
+
+  }
+}
+
+.trackingRow {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+
+  @include media-breakpoint-down (md) {
+    flex-direction: column;
+    padding-left: 1em;
+  }
+}

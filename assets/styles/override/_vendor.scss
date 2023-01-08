@@ -1,0 +1,38 @@
+.image-gallery-right-nav .image-gallery-svg,
+.image-gallery-left-nav .image-gallery-svg {
+  height: 75px;
+  width: 55px;
+}
+
+
+#techmarket-single-product-image-gallery {
+
+  .image-gallery-right-nav > .image-gallery-svg,
+  .image-gallery-left-nav > .image-gallery-svg {
+    width: 55px;
+    height: 30px;
+  }
+
+  .image-gallery-left-nav > .image-gallery-svg {
+    padding-right: 40px;
+  }
+
+  .image-gallery-right-nav > .image-gallery-svg {
+    padding-left: 40px;
+  }
+
+}
+
+
+.dropdown-menu--hoverable li:hover > ul {
+  display: block !important;
+  overflow: visible !important;
+  min-height: 100% !important;
+  width: 20rem !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.dropdown-menu--hoverable li:hover > ul.dropdown-menu {
+  top: 0 !important;
+}

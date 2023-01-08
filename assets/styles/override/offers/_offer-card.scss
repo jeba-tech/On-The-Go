@@ -1,0 +1,19 @@
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    button {
+			margin: 1rem 0;
+      padding: 0.5rem;
+			color: white;
+    }
+  }
+}
