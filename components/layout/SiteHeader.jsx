@@ -168,9 +168,10 @@ const SiteHeader = () => {
           <Sticky
             enabled
             innerActiveClass={"z-index-l1 bg-white c-pt-2 pb-3"}
-            activeClass={"w-100 sticky-remove-block"}
+            activeClass={"w-100 sticky-remove-block "}
+           
           >
-            <div className="row col-full">
+            <div className="row col-full"  style={{height:'38px'}}>
              
 
               <div className="site-branding">

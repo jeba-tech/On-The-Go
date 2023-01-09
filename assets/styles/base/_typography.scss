@@ -2,7 +2,7 @@
  * Typography
  */
 
-body {
+ body {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
@@ -12,7 +12,7 @@ button,
 input,
 textarea {
 	color: $color_body;
-	font-family: $base-font;
+	font-family:"Rubik", "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 	line-height: 1.618;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -30,7 +30,8 @@ button,
 
 select {
 	color: initial;
-	font-family: $base-font;
+	font-family:"Rubik", "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+	;
 }
 
 h1,
